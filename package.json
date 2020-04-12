@@ -4,6 +4,8 @@
   "description": "Raw text file transporteren en transformeren naar de ELK",
   "main": "index.js",
   "scripts": {
+    "prestart": "eslint .",
+    "start": "node .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +20,10 @@
   "homepage": "https://github.com/ScrabbleYourWordsApp/word-dump-service#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2"
   }
 }
