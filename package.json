@@ -20,10 +20,14 @@
   "homepage": "https://github.com/ScrabbleYourWordsApp/word-dump-service#readme",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "express": "^4.17.1"
+    "eslint": "^6.8.0",
+    "express": "^4.17.1",
+    "glob": "^7.1.6",
+    "move-file": "^1.2.0",
+    "winston": "^3.2.1",
+    "winston-daily-rotate-file": "^4.4.2"
   },
   "devDependencies": {
-    "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2"
   }

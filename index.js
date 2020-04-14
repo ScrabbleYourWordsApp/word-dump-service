@@ -1,5 +1,9 @@
 const express = require('express');
-const env = require('dotenv').config();
+require('dotenv').config();
+
+const Reader = require('./wordReader/WordReader.js');
+const logger = require('./logger/Logger');
+
 const app = express();
 const port = process.env.PORT || '8080';
 
@@ -8,5 +12,6 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Listening to requests: http://localhost:${port}.`);
+  logger.data.info('Word Dump Services started');
+  Reader.data.readDump(process.env.TO_PROCESS_FILE_FOLDER);
 });
