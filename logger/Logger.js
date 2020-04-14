@@ -4,14 +4,14 @@ const fs = require('fs');
 require('path');
 
 const env = process.env.NODE_ENV || 'development';
-const logDir = 'log';
+const logDir = process.env.LOG_FILE;
 
 if (!fs.existsSync(logDir)) {
   fs.mkdirSync(logDir);
 }
 
 const dailyRotateFileTransport = new transports.DailyRotateFile({
-  filename: `${logDir}/%DATE%-results.log`,
+  filename: `${logDir}/%DATE%-word-dump-service.log`,
   datePattern: 'YYYY-MM-DD',
 });
 

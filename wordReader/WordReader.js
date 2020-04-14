@@ -34,7 +34,7 @@ const WordReader = {
   getFilesFromDirectory(directory) {
     logger.data.info(`Getting all files from the following directory: ${directory}`);
     return new Promise((resolve) => (
-      glob(directory.concat('/*.txt'), (err, files) => {
+      glob(directory.concat(process.env.STRING_EXTENTION), (err, files) => {
         if (err) {
           this.errorHandling(err);
         }
