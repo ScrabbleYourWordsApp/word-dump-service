@@ -1,0 +1,51 @@
+{
+  "gazetteers": [
+    {
+      "name": "countries.intl.nl.txt",
+      "source": "howardsnlp/data/landen.txt",
+      "modified": false
+    },
+    {
+      "name": "cities.intl.nl.txt",
+      "source": "howardsnlp/data/steden.txt",
+      "modifed": false
+    },
+    {
+      "name": "events.intl.nl.txt",
+      "source": "frog-data/.../eve.ner",
+      "modified": true,
+      "notes": ["Add more, e.g. 'Thanksgiving', though perhaps in sep. 'intl' list."]
+    },
+    {
+      "name": "municipalities.nl.nl.txt",
+      "source": "howardsnlp/data/nederlandse_gemeenten.txt",
+      "modified": false
+    },
+    {
+      "name": "municipalities.be.nl.txt",
+      "source": "howardsnlp/data/belgische_gemeenten.txt",
+      "modified": false
+    },
+    {
+      "name": "organisations.nl.txt",
+      "source": "howardsnlp/data/organisations.csv",
+      "modified": true,
+      "notes": ["removed header line", "Is this an intl list?"]
+    },
+    {
+      "name": "streets.be.nl.txt",
+      "source": "cl2nlp/cl2nlp/data/streets.txt",
+      "modified": true
+    },
+    {
+      "name": "streets.nl.nl.txt",
+      "source": "frog-data/.../straten-nld.ner"
+    },
+    {
+      "name": "family_names.bnlx.nl.txt",
+      "source": "howardsnlp/data/familienamen.txt",
+      "modified": false
+    }
+
+  ]
+}
